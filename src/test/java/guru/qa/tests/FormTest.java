@@ -3,6 +3,7 @@ package guru.qa.tests;
 import com.codeborne.selenide.Configuration;
 import guru.qa.pages.RegistrationPage;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -21,6 +22,7 @@ public class FormTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
     TestData testData = new TestData();
 
+    @Tag("properties")
     @Test
     void fillFormTest() {
         step("Открываем страницу", () ->{

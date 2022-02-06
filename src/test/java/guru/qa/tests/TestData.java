@@ -10,7 +10,7 @@ public class TestData {
     String userNumber = faker.phoneNumber().subscriberNumber(10);
     String currentAddress = faker.address().fullAddress();
     String subject = "a";
-    String pictureName = "file.txt";
+  //  String pictureName = "file.txt";
     String firstCity = "NCR";
     String secondCity = "Delhi";
 }
