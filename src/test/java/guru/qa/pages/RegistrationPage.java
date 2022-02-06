@@ -32,7 +32,7 @@ public class RegistrationPage {
     public CalendarComponent calendarComponent = new CalendarComponent();
 
     public RegistrationPage openPage() {
-        open("/automation-practice-form");
+        open("https://demoqa.com/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(Condition.text("Student Registration Form"));
 
         return this;
