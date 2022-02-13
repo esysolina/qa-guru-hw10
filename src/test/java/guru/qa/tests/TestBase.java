@@ -16,13 +16,13 @@ public class TestBase {
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        Configuration.browserSize = System.getProperty("browserSize","1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "91");
+        Configuration.browserSize = System.getProperty("browserSize","1920x1080");
 
-        String remoteUrl = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
-        String login = System.getProperty("login", "user1");
-        String pass = System.getProperty("pass", "1234");
+        String remoteUrl = System.getProperty("remoteUrl");
+        String login = System.getProperty("login");
+        String pass = System.getProperty("pass");
 
         String url = "https://" + login + ":" + pass + "@" + remoteUrl;
 
