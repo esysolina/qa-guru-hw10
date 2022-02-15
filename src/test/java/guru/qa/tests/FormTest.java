@@ -1,19 +1,8 @@
 package guru.qa.tests;
 
-import com.codeborne.selenide.Configuration;
 import guru.qa.pages.RegistrationPage;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.files.DownloadActions.click;
-import static guru.qa.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
-import com.github.javafaker.Faker;
-import java.util.Calendar;
 
 import org.junit.jupiter.api.Tag;
 
