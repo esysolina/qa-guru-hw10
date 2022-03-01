@@ -14,7 +14,7 @@ public class FormTest extends TestBase {
     @Test
     void fillFormTest() {
         step("Открываем страницу", () ->{
-            registrationPage.openPage("/");
+            registrationPage.openPage();
         });
         step("Вводим имя", () ->{
             registrationPage.typeFirstName(testData.firstName);
