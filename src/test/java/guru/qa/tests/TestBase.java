@@ -26,6 +26,7 @@ public class TestBase {
         String pass = System.getProperty("pass");
 
         String url = "https://" + login + ":" + pass + "@" + remoteUrl;
+        Configuration.remote = url;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
